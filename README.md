@@ -35,8 +35,8 @@ O scraper coleta as seguintes informações do site:
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu_usuario/nome_do_repositorio.git
-   cd nome_do_repositorio
+   git clone https://github.com/pablomendesfaria/korean-international-trade-scraper.git
+   cd korean-international-trade-scraper
    ```
 
 2. **Instale as dependências:**
