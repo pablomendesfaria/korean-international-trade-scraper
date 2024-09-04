@@ -1,11 +1,11 @@
 
 # Korean International Trade Scraper
 
-Este projeto é um scraper desenvolvido em Python que coleta informações sobre estatísticas de comércio entre a Coréia do Sul e países internacionais do site [TradeData](https://tradedata.go.kr/cts/index_eng.do#tabHsSgn2). Ele foi projetado para lidar com múltiplas páginas e utiliza uma API oculta, descoberta através da inspeção da página, para realizar requisições assíncronas de forma eficiente.
+Este projeto é um scraper desenvolvido em Python que coleta informações sobre estatísticas de comércio entre a Coréia do Sul e países estrangeiros do site [TradeData](https://tradedata.go.kr/cts/index_eng.do#tabHsSgn2). Ele foi projetado para lidar com múltiplas páginas e utiliza uma API oculta, descoberta através da inspeção da página, para realizar requisições assíncronas de forma eficiente.
 
 ## Funcionalidades
 
-- **Raspagem de Dados:** Coleta informações sobre importação e exportação entre a Coréia do Sul e países internacionais.
+- **Raspagem de Dados:** Coleta informações sobre importação e exportação entre a Coréia do Sul e países estrangeiros.
 - **Requisições Assíncronas:** Utiliza `aiohttp` e `asyncio` para melhorar o desempenho do scraper, especialmente ao lidar com múltiplas páginas.
 - **Geração de DataFrame:** Os dados coletados são organizados em um `pandas DataFrame`.
 - **Armazenamento em CSV:** Os dados são salvos em um arquivo CSV estruturado para análise posterior.
