@@ -1,69 +1,69 @@
 
 # Korean International Trade Scraper
 
-Este projeto é um scraper desenvolvido em Python que coleta informações sobre estatísticas de comércio entre a Coréia do Sul e países estrangeiros do site [TradeData](https://tradedata.go.kr/cts/index_eng.do#tabHsSgn2). Ele foi projetado para lidar com múltiplas páginas e utiliza uma API oculta, descoberta através da inspeção da página, para realizar requisições assíncronas de forma eficiente.
+This project is a Python scraper that collects information about trade statistics between South Korea and foreign countries from the [TradeData](https://tradedata.go.kr/cts/index_eng.do#tabHsSgn2) website. It is designed to handle multiple pages and uses a hidden API, discovered through page inspection, to perform asynchronous requests efficiently.
 
-## Funcionalidades
+## Features
 
-- **Raspagem de Dados:** Coleta informações sobre importação e exportação entre a Coréia do Sul e países estrangeiros.
-- **Requisições Assíncronas:** Utiliza `aiohttp` e `asyncio` para melhorar o desempenho do scraper, especialmente ao lidar com múltiplas páginas.
-- **Geração de DataFrame:** Os dados coletados são organizados em um `pandas DataFrame`.
-- **Armazenamento em CSV:** Os dados são salvos em um arquivo CSV estruturado para análise posterior.
+- **Data Scraping:** Collects information on import and export between South Korea and foreign countries.
+- **Asynchronous Requests:** Uses `aiohttp` and `asyncio` to improve scraper performance, especially when dealing with multiple pages.
+- **DataFrame Generation:** The collected data is organized into a `pandas DataFrame`.
+- **CSV storage:** The data is saved in a structured CSV file for later analysis.
 
-## Dados Coletados
+## Data Collected
 
-O scraper coleta as seguintes informações do site:
+The scraper collects the following information from the website:
 
-- **Período:** Ano em que o comércio ocorreu.
-- **País:** País com o qual a Coréia comercializou.
-- **Mercadorias:** Mercadorias que foram comercializadas.
-- **Peso de Exportação:** Peso das exportações em toneladas.
-- **Valor de Exportação:** Valor monetário das exportações em dólares.
-- **Peso de Importação:** Peso das importações em toneladas.
-- **Valor de Importação:** Valor monetário das importações em dólares.
-- **Balança Comercial:** Diferença entre o valor das exportações e importações.
+- **Year:** Year in which the trade took place.
+- **Country:** Country with which Korea traded.
+- **Goods:** Goods that were traded.
+- **Export Weight:** Weight of exports in tons.
+- **Export Value:** Monetary value of exports in dollars.
+- **Import Weight:** Weight of imports in tons.
+- **Import Value:** Monetary value of imports in dollars.
+- **Balance of Trade:** Difference between the value of exports and imports.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - **Python 3.x**
-- **aiohttp**: Para requisições HTTP assíncronas.
-- **asyncio**: Para gerenciar a execução assíncrona.
-- **pandas**: Para manipulação e análise de dados.
-- **CSV**: Para armazenamento de dados.
+- **aiohttp**: For asynchronous HTTP requests.
+- **asyncio**: To manage asynchronous execution.
+- **pandas**: For data manipulation and analysis.
+- **CSV**: For data storage.
 
-## Como Usar
+## How to Use
 
-1. **Clone o repositório:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/pablomendesfaria/korean-international-trade-scraper.git
    cd korean-international-trade-scraper
    ```
 
-2. **Instale as dependências:**
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Execute o scraper:**
+3. **Run the scraper:**
    ```bash
-   python scrape/scrapy.py "nome_do_arquivo_de_saida"
+   python scrape/scrapy.py output_file_name
    ```
 
-4. **Acesse os dados:**
+4. **Access the data:**
 
-   Os dados coletados estarão disponíveis no arquivo `nome_informado.csv` gerado na raiz do projeto.
+   The collected data will be available in the `provided_file_name.csv` file generated at the project root.
 
-## Estrutura do Projeto
+## Project Structure
 
-- `scrape`: Modulo que armazena os arquivos fontes do projeto, como o script e uma amostra dos dados raspados.
-- `scrapy.py`: Script principal que realiza a raspagem e salva os dados.
-- `requirements.txt`: Lista de dependências do projeto.
-- `nome_informado.csv`: Arquivo gerado com os dados coletados.
+- `scrape`: Module that stores the project's source files, such as the script and a sample of the scraped data.
+- `scrapy.py`: Main script that performs scraping and saves the data.
+- `requirements.txt`: List of project dependencies.
+- `nome_informado.csv`: File generated with the collected data.
 
-## Contribuições
+## Contributions
 
-Este projeto foi desenvolvido como parte do meu portfólio pessoal para demonstrar minhas habilidades técnicas. Se você encontrar algo que possa ser melhorado ou tiver ideias para expandir o projeto, sinta-se à vontade para contribuir ou compartilhar feedback.
+This project was developed as part of my personal portfolio to showcase my technical skills. If you find anything that could be improved or have ideas to expand the project, feel free to contribute or share feedback.
 
-## Licença
+## License
 
-Este projeto é livre para uso, modificação e distribuição. Não há uma licença específica associada a este projeto, portanto, sinta-se à vontade para utilizá-lo como preferir.
+This project is free to use, modify and distribute. There is no specific license associated with this project, so feel free to use it however you like.
