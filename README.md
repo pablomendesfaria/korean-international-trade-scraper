@@ -51,11 +51,11 @@ The scraper collects the following information from the website:
 
 4. **Access the data:**
 
-   The collected data will be available in the `provided_file_name.csv` file generated at the project root.
+   The collected data will be available in the `provided_file_name.csv` file generated at the scrape folder.
 
 ## Project Structure
 
-- `scrape`: Module that stores the project's source files, such as the script and a sample of the scraped data.
+- `scrape`: Module that stores the project's source files, such as the script, a sample of the scraped data and the output file.
 - `scrapy.py`: Main script that performs scraping and saves the data.
 - `requirements.txt`: List of project dependencies.
 - `nome_informado.csv`: File generated with the collected data.

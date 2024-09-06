@@ -124,7 +124,7 @@ async def main():
         scraped_data = pd.DataFrame(valid_results, columns=columns)  # Convert the list to a dataframe
         scraped_data.columns = ["Year", "Country", "Goods", "ExportWeightTon", "ExportValueKUSD", "ImportWeightTon", "ImportValueKUSD", "BalanceOfTradeKUSD"]  # Rename the columns
         scraped_data.insert(0, "ScrapeDatetime", scrape_datetime)  # Insert the scrape datetime column
-        scraped_data.to_csv(f"{filename}.csv", encoding="utf-8", lineterminator="\n", quotechar='"', quoting=csv.QUOTE_ALL, index=False)  # Save the dataframe to a csv file?
+        scraped_data.to_csv(f"scrape/{filename}.csv", encoding="utf-8", lineterminator="\n", quotechar='"', quoting=csv.QUOTE_ALL, index=False)  # Save the dataframe to a csv file?
 
         print(f"Data saved in {filename}")
     else:
