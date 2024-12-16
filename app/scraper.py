@@ -9,6 +9,19 @@ import pandas as pd
 
 
 async def fetch(session, url, payload, page, retries=3):
+    """Make the request on the URL, if the request fails, it will be redone several times, if it fails every time the program will be terminated
+
+    Args:
+        session (aiohttp.ClientSession): A session to perform multiple requests (if necessary)
+        url (str): String representing the server url
+        payload (str): The content I want to request from the server
+        page (int): The server page that will be scraped
+        retries (int, optional): The number of attempts to make a request to the server. Defaults to 3.
+
+    Returns:
+        dict: The response in JSON
+        None: If all three attempts failed
+    """
     for attempt in range(retries):
         try:
             async with session.post(url, data=payload) as response:  # Make the request
