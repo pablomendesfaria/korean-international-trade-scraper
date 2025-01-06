@@ -77,7 +77,7 @@ Ensure that you have **Python >= 3.13** installed. Use [pyenv](https://github.co
 
 1. Execute the scraper with the desired output file name:
    ```bash
-   python app/scraper.py output_file_name.csv
+   python app/scraper.py output_file_name
    ```
 
 2. The collected data will be saved in the `output_file_name.csv` file inside the `data` folder.
